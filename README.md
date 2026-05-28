@@ -1,134 +1,88 @@
-*# SnapOut*
+<div align="center">
 
+<h1>SnapOut</h1>
 
+<p>
+A native Android focus-mode app that helps users reduce doomscrolling, control distracting apps, and build better digital habits.
+</p>
 
-*SnapOut is a native Android focus-mode app built to help users reduce doomscrolling and control distracting apps using daily limits, intervention popups, and simple analytics.*
+</div>
 
+<hr>
 
+<h2>About the App</h2>
 
-*## Features*
+<p>
+SnapOut is built for Android users who want to control distracting apps like YouTube, Reddit, Instagram, and other attention-draining platforms. The app lets users select distracting apps, set a daily usage limit, and shows an intervention popup when the limit is crossed.
+</p>
 
+<h2>Key Features</h2>
 
+<ul>
+  <li>Track screen time for Today, Yesterday, Day Before, and Week</li>
+  <li>Select distracting apps for Focus Mode</li>
+  <li>Set daily usage limit up to 5 hours</li>
+  <li>Show intervention popup after the limit is crossed</li>
+  <li>Lock In button to return to phone home screen</li>
+  <li>Temporary Ignore option with a bypass timer</li>
+  <li>Analytics dashboard with blocked attempts and app-wise breakdown</li>
+  <li>Settings page with permission status and setup guide</li>
+</ul>
 
-*\* Track screen time for Today, Yesterday, Day Before, and Week*
+<h2>Tech Stack</h2>
 
-*\* Select distracting apps like YouTube, Reddit, Instagram, etc.*
+<ul>
+  <li>Native Android</li>
+  <li>Java</li>
+  <li>XML Layouts</li>
+  <li>Android Studio</li>
+  <li>Android SDK APIs</li>
+</ul>
 
-*\* Set daily usage limit up to 5 hours*
+<h2>Android APIs Used</h2>
 
-*\* Show intervention popup after the limit is crossed*
+<ul>
+  <li>UsageStatsManager</li>
+  <li>Foreground Service</li>
+  <li>Overlay Permission</li>
+  <li>Notification API</li>
+  <li>SharedPreferences</li>
+  <li>PackageManager</li>
+  <li>RecyclerView</li>
+  <li>BottomNavigationView</li>
+</ul>
 
-*\* Lock In button to return to phone home screen*
+<h2>Screenshots</h2>
 
-*\* Ignore/Continue option with temporary bypass*
+<h3>Home Screen</h3>
+<img src="screenshots/home.jpg" width="260">
 
-*\* Analytics dashboard with blocked attempts and app-wise breakdown*
+<h3>Focus Mode</h3>
+<img src="screenshots/focus.jpg" width="260">
 
-*\* Settings page with permission status and usage guide*
+<h3>Intervention Popup</h3>
+<img src="screenshots/popup.jpg" width="260">
 
+<h3>Analytics</h3>
+<img src="screenshots/analytics.jpg" width="260">
 
+<h3>Settings</h3>
+<img src="screenshots/settings.jpg" width="260">
 
-*## Tech Stack*
+<h2>Important Note</h2>
 
+<p>
+SnapOut works on Android devices only. For the intervention popup to work properly, users must allow Usage Access, Display over other apps, and Notification permission.
+</p>
 
+<p>
+Screen-time values may be slightly different from Android Digital Wellbeing because Android gives limited usage data access to third-party apps. SnapOut uses available Android usage data to keep focus limits practical and reliable.
+</p>
 
-*\* Native Android*
+<h2>Created By</h2>
 
-*\* Java*
-
-*\* XML Layouts*
-
-*\* Android Studio*
-
-*\* Android SDK APIs*
-
-
-
-*## Android APIs Used*
-
-
-
-*\* UsageStatsManager*
-
-*\* Foreground Service*
-
-*\* Overlay Permission*
-
-*\* Notification API*
-
-*\* SharedPreferences*
-
-*\* PackageManager*
-
-*\* RecyclerView*
-
-*\* BottomNavigationView*
-
-
-
-*## Screenshots*
-
-
-
-*### Home Screen*
-
-
-
-*!\[Home Screen](screenshots/home.jpg)*
-
-
-
-*### Focus Mode*
-
-
-
-*!\[Focus Screen](screenshots/focus.jpg)*
-
-
-
-*### Intervention Popup*
-
-
-
-*!\[Popup Screen](screenshots/popup.jpg)*
-
-
-
-*### Analytics*
-
-
-
-*!\[Analytics Screen](screenshots/analytics.jpg)*
-
-
-
-*### Settings*
-
-
-
-*!\[Settings Screen](screenshots/settings.jpg)*
-
-
-
-*## Important Note*
-
-
-
-*SnapOut works on Android devices only. For the intervention popup to work properly, users must allow Usage Access, Display over other apps, and Notification permission.*
-
-
-
-*Screen-time values may be slightly different from Android Digital Wellbeing because Android gives limited usage data access to third-party apps. SnapOut uses available Android usage data to keep focus limits practical and reliable.*
-
-
-
-*## Created By*
-
-
-
-*\*\*Anirudh Pathi\*\**
-
-
-
-
-
+<p>
+<strong>Anirudh Pathi</strong><br>
+Student Developer • SnapOut<br>
+Building simple tools for better focus.
+</p>
