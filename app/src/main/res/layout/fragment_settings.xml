@@ -10,7 +10,7 @@
         android:layout_height="wrap_content"
         android:orientation="vertical"
         android:padding="20dp"
-        android:paddingBottom="100dp">
+        android:paddingBottom="100dp" >
 
         <TextView
             android:layout_width="wrap_content"
@@ -180,42 +180,52 @@
 
         </LinearLayout>
 
-        <!-- About Card -->
-        <LinearLayout
+    <!-- About + Creator Card -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#12121A"
+        android:padding="18dp"
+        android:layout_marginTop="18dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="About SnapOut"
+            android:textColor="#E6E6EA"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:background="#12121A"
-            android:padding="18dp"
-            android:layout_marginTop="18dp">
+            android:text="SnapOut is an Android focus-control app designed to help users reduce doomscrolling and manage distracting apps. It lets you select apps, set a daily limit, and shows an intervention popup when the limit is crossed."
+            android:textColor="#8A8A95"
+            android:textSize="13sp"
+            android:lineSpacingMultiplier="1.25"
+            android:layout_marginTop="10dp" />
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="About SnapOut"
-                android:textColor="#E6E6EA"
-                android:textSize="18sp"
-                android:textStyle="bold" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="The app also provides simple analytics such as blocked attempts, continue clicks, most triggered app, and app-wise activity breakdown."
+            android:textColor="#8A8A95"
+            android:textSize="13sp"
+            android:lineSpacingMultiplier="1.25"
+            android:layout_marginTop="8dp" />
 
-            <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="SnapOut helps you control distracting apps using Focus Mode, daily limits, and intervention popups."
-                android:textColor="#8A8A95"
-                android:textSize="13sp"
-                android:lineSpacingMultiplier="1.25"
-                android:layout_marginTop="8dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#252530"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="18dp" />
 
-        </LinearLayout>
-
-        <!-- Creator Credit Card -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="horizontal"
-            android:background="#12121A"
-            android:padding="18dp"
-            android:layout_marginTop="18dp"
             android:gravity="center_vertical">
 
             <ImageView
@@ -262,7 +272,7 @@
                 <TextView
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:text="Made With Android Studio."
+                    android:text="Made with Android Studio."
                     android:textColor="#8A8A95"
                     android:textSize="12sp"
                     android:lineSpacingMultiplier="1.2"
@@ -273,5 +283,8 @@
         </LinearLayout>
 
     </LinearLayout>
+
+    </LinearLayout>
+
 
 </ScrollView>
