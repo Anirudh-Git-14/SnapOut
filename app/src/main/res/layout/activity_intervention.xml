@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#0D0D11"
+    android:padding="24dp">
+
+    <LinearLayout
+        android:id="@+id/layoutTargetDeck"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:background="#14141A"
+        android:paddingStart="20dp"
+        android:paddingTop="22dp"
+        android:paddingEnd="20dp"
+        android:paddingBottom="22dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/txtWarningBody"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintVertical_chainStyle="packed">
+
+        <ImageView
+            android:id="@+id/imgTargetIcon"
+            android:layout_width="56dp"
+            android:layout_height="56dp"
+            tools:src="@android:drawable/sym_def_app_icon" />
+
+        <TextView
+            android:id="@+id/txtTargetAppName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="APP NAME"
+            android:textColor="#00F0FF"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:letterSpacing="0.04"
+            android:layout_marginTop="14dp" />
+
+        <TextView
+            android:id="@+id/txtTargetStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Focus mode is active"
+            android:textColor="#8A8A95"
+            android:textSize="12sp"
+            android:letterSpacing="0.05"
+            android:layout_marginTop="6dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/txtWarningBody"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Step away now, or continue with intention."
+        android:textColor="#A0A0AA"
+        android:textSize="14sp"
+        android:gravity="center"
+        android:lineSpacingMultiplier="1.25"
+        android:letterSpacing="0.02"
+        android:layout_marginTop="24dp"
+        android:paddingStart="10dp"
+        android:paddingEnd="10dp"
+        app:layout_constraintTop_toBottomOf="@id/layoutTargetDeck"
+        app:layout_constraintBottom_toTopOf="@id/layoutActionButtons"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/layoutActionButtons"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="24dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnStartSession"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="Return To Home"
+            android:textColor="#00F0FF"
+            android:textStyle="bold"
+            android:background="#15151C"
+            android:letterSpacing="0.08"
+            android:layout_marginBottom="12dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnReturnToFocus"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:text="OPEN SNAPOUT"
+            android:textColor="#E6E6EA"
+            android:textStyle="bold"
+            android:background="#15151C"
+            android:letterSpacing="0.08"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/txtContinueAnyway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Continue for 10 min"
+            android:textColor="#60606A"
+            android:textSize="13sp"
+            android:layout_gravity="center"
+            android:padding="8dp"
+            android:letterSpacing="0.04" />
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

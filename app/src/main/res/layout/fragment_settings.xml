@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:paddingBottom="100dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:textColor="@color/cyber_cyan"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+        <!-- User Guide Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#12121A"
+            android:padding="18dp"
+            android:layout_marginTop="24dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Before You Use SnapOut"
+                android:textColor="#E6E6EA"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SnapOut works on Android devices only. To block distractions properly, please allow Usage Access, Display over other apps, and Notification permission."
+                android:textColor="#8A8A95"
+                android:textSize="13sp"
+                android:lineSpacingMultiplier="1.25"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Without Display over other apps permission, the warning popup will not appear on apps like YouTube, Reddit, or Instagram."
+                android:textColor="#FFB86C"
+                android:textSize="13sp"
+                android:lineSpacingMultiplier="1.25"
+                android:layout_marginTop="10dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Note: Screen-time values may be slightly different from Android Digital Wellbeing. Android gives limited usage data to third-party apps, so small differences can happen. SnapOut uses the available Android usage data to keep focus limits practical and reliable."
+                android:textColor="#8A8A95"
+                android:textSize="13sp"
+                android:lineSpacingMultiplier="1.25"
+                android:layout_marginTop="10dp" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Manage SnapOut controls"
+            android:textColor="#8A8A95"
+            android:textSize="14sp"
+            android:layout_marginTop="4dp" />
+
+        <!-- Permission Status Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#12121A"
+            android:padding="18dp"
+            android:layout_marginTop="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Permission Status"
+                android:textColor="#E6E6EA"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txtUsagePermissionStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Usage Access: Checking..."
+                android:textColor="#8A8A95"
+                android:textSize="14sp"
+                android:layout_marginTop="12dp" />
+
+            <TextView
+                android:id="@+id/txtOverlayPermissionStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Overlay Permission: Checking..."
+                android:textColor="#8A8A95"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+
+            <TextView
+                android:id="@+id/txtNotificationPermissionStatus"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notification Permission: Checking..."
+                android:textColor="#8A8A95"
+                android:textSize="14sp"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <!-- Reset Analytics Card -->
+        <LinearLayout
+            android:id="@+id/cardResetAnalytics"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#12121A"
+            android:padding="18dp"
+            android:layout_marginTop="18dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Reset Analytics"
+                android:textColor="#E6E6EA"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear today’s popup, continue, and app-wise stats."
+                android:textColor="#8A8A95"
+                android:textSize="13sp"
+                android:layout_marginTop="6dp" />
+
+        </LinearLayout>
+
+        <!-- Clear Selected Apps Card -->
+        <LinearLayout
+            android:id="@+id/cardClearSelectedApps"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#12121A"
+            android:padding="18dp"
+            android:layout_marginTop="18dp"
+            android:clickable="true"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Clear Selected Apps"
+                android:textColor="#E6E6EA"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Remove all apps currently selected in Focus Mode."
+                android:textColor="#8A8A95"
+                android:textSize="13sp"
+                android:layout_marginTop="6dp" />
+
+        </LinearLayout>
+
+        <!-- About Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:background="#12121A"
+            android:padding="18dp"
+            android:layout_marginTop="18dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="About SnapOut"
+                android:textColor="#E6E6EA"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="SnapOut helps you control distracting apps using Focus Mode, daily limits, and intervention popups."
+                android:textColor="#8A8A95"
+                android:textSize="13sp"
+                android:lineSpacingMultiplier="1.25"
+                android:layout_marginTop="8dp" />
+
+        </LinearLayout>
+
+        <!-- Creator Credit Card -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:background="#12121A"
+            android:padding="18dp"
+            android:layout_marginTop="18dp"
+            android:gravity="center_vertical">
+
+            <ImageView
+                android:id="@+id/imgCreatorPhoto"
+                android:layout_width="72dp"
+                android:layout_height="72dp"
+                android:src="@drawable/anirudh_profile"
+                android:scaleType="centerCrop"
+                android:background="#15151C"
+                android:padding="2dp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:layout_marginStart="16dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Created by"
+                    android:textColor="#8A8A95"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Anirudh Pathi"
+                    android:textColor="@color/cyber_cyan"
+                    android:textSize="20sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Student Developer • SnapOut"
+                    android:textColor="#E6E6EA"
+                    android:textSize="13sp"
+                    android:layout_marginTop="4dp" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Made With Android Studio."
+                    android:textColor="#8A8A95"
+                    android:textSize="12sp"
+                    android:lineSpacingMultiplier="1.2"
+                    android:layout_marginTop="6dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</ScrollView>
