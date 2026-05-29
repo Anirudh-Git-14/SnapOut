@@ -197,15 +197,16 @@ public class HomeFragment extends Fragment {
 
             case "TODAY": {
                 /*
-                 * Today was already close to Android Settings for you.
-                 * So keep aggregate method for today.
+                 * Today:
+                 * Use UsageEvents session calculation instead of aggregate stats.
+                 * This avoids wrong carry-over usage near midnight.
                  */
-                finalUsageMap = queryAggregateUsageMap(
+                finalUsageMap = queryEventsUsageMap(
                         todayStart,
                         now,
                         pm,
                         launcherPackage,
-                        "TODAY_AGGREGATE"
+                        "TODAY_EVENTS"
                 );
                 break;
             }
@@ -338,12 +339,12 @@ public class HomeFragment extends Fragment {
             cursor.add(Calendar.DAY_OF_YEAR, 1);
         }
 
-        HashMap<String, Long> todayMap = queryAggregateUsageMap(
+        HashMap<String, Long> todayMap = queryEventsUsageMap(
                 todayStart,
                 now,
                 pm,
                 launcherPackage,
-                "WEEK_TODAY_AGGREGATE"
+                "WEEK_TODAY_EVENTS"
         );
 
         mergeUsageMaps(weekMap, todayMap);
@@ -508,8 +509,6 @@ public class HomeFragment extends Fragment {
 
             if (timeMs <= 0) continue;
 
-            totalUsageMs += timeMs;
-
             if (timeMs < MIN_DISPLAY_TIME_MS) {
                 Log.d(LOG_TAG, period + " BELOW_MIN pkg="
                         + packageName + " time=" + formatMs(timeMs));
@@ -531,7 +530,9 @@ public class HomeFragment extends Fragment {
                 String appName = pm.getApplicationLabel(appInfo).toString();
                 Drawable appIcon = pm.getApplicationIcon(appInfo);
 
+
                 appList.add(new AppUsageModel(appName, appIcon, timeMs));
+                totalUsageMs += timeMs;
 
                 Log.d(LOG_TAG, period + " SHOW pkg=" + packageName
                         + " name=" + appName
