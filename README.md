@@ -78,11 +78,3 @@ SnapOut works on Android devices only. For the intervention popup to work proper
 <p>
 Screen-time values may be slightly different from Android Digital Wellbeing because Android gives limited usage data access to third-party apps. SnapOut uses available Android usage data to keep focus limits practical and reliable.
 </p>
-
-<h2>Created By</h2>
-
-<p>
-<strong>Anirudh Pathi</strong><br>
-Student Developer • SnapOut<br>
-Building simple tools for better focus.
-</p>
