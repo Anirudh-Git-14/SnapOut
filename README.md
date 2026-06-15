@@ -74,6 +74,8 @@ SnapOut is built for Android users who want to control distracting apps like You
 <p>
 SnapOut works on Android devices only. For the intervention popup to work properly, users must allow Usage Access, Display over other apps, and Notification permission.
 </p>
+<h4>Use Below Link to Download App</h4>
+<p>https://github.com/Anirudh-Git-14/SnapOut/releases/download/v1.0.0/snapout.apk</p>
 
 <p>
 Screen-time values may be slightly different from Android Digital Wellbeing because Android gives limited usage data access to third-party apps. SnapOut uses available Android usage data to keep focus limits practical and reliable.
